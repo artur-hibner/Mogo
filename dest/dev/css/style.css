@@ -201,6 +201,43 @@ body {
           transform: translate(-50%, -50%);
 }
 
+.counter {
+  background-color: #95e1d3;
+  padding: 80px 0;
+}
+
+.counter .wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.counter__number, .counter__caption {
+  display: block;
+}
+
+.counter__number {
+  font-family: "Montserrat", sans-serif;
+  font-size: 7.2rem;
+  color: #FFFFFF;
+  line-height: 7.2rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.counter__caption {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  line-height: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 /* ========== FOOTER SECTION ========== */
 /* ========== MEDIA QUERIES ========== */
 
