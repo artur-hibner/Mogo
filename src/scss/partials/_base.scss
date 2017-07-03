@@ -14,7 +14,7 @@
 			content: "";
     		display: block;
     		width: 60px;
-    		height: 5px;
+    		height: 3px;
     		background-color: #f38181;
     		margin-top: 40px;
     		margin-bottom: 40px;
@@ -93,5 +93,40 @@
 	&__caption{
 		@include font-family($montserrat, 1.4rem, #FFFFFF, 1.4rem, 400);
 		text-transform: uppercase;
+	}
+}
+
+.work{
+	&__list{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: left;
+		padding: 20px 0 40px 0;
+	}
+	&__item{
+		display: flex;
+		align-items: flex-start;
+		flex-basis: 33%;
+		&-wrapper{
+			flex: 1;
+		}
+	}
+	&__heading{
+		@include font-family($montserrat, 1.4rem, #333333, 1.4rem, 400);
+		text-transform: uppercase;
+		margin-bottom: 16px;
+	}
+	&__icon{
+		margin: 0 25px;
+	}
+	&__description{
+		@include font-family($roboto, 1.5rem, #999999, 2.4rem, 400);
+	}
+	&__line{
+		flex-basis: 100%;
+		height: 1px;
+		background-color: #e5e5e5;
+		margin: 50px 0;
 	}
 }
