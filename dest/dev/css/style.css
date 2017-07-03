@@ -104,6 +104,7 @@ body {
   font-weight: 400;
   margin-bottom: 20px;
   padding-top: 90px;
+  position: relative;
 }
 
 .section__subtitle {
@@ -113,6 +114,7 @@ body {
   line-height: 3rem;
   font-weight: 700;
   text-transform: uppercase;
+  position: relative;
 }
 
 .section__subtitle:after {
@@ -246,7 +248,7 @@ body {
           flex-direction: row;
   flex-wrap: wrap;
   text-align: left;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 100px 0;
 }
 
 .work__item {
@@ -289,6 +291,39 @@ body {
   height: 1px;
   background-color: #e5e5e5;
   margin: 50px 0;
+}
+
+.design {
+  background-image: url("../images/banner-1.png");
+  background-size: cover;
+  position: relative;
+}
+
+.design:before {
+  content: ' ';
+  background-color: #FFFFFF;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.design__images {
+  position: relative;
+}
+
+.design__tablet {
+  max-width: 560px;
+}
+
+.design__iphone {
+  max-width: 262px;
+  position: absolute;
+  bottom: -90px;
+  left: 57%;
 }
 
 /* ========== FOOTER SECTION ========== */
