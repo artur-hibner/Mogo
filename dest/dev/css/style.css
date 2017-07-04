@@ -426,6 +426,69 @@ body {
   margin: 14px;
 }
 
+.testimonial {
+  background-color: #f8f8f8;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #999999;
+  line-height: 2.4rem;
+  font-weight: 300i;
+  font-style: italic;
+}
+
+.testimonial .wrapper {
+  overflow: hidden;
+  padding: 70px 110px;
+  position: relative;
+}
+
+.testimonial__quote {
+  display: -webkit-box;
+  display: flex;
+  text-align: left;
+}
+
+.testimonial__author {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.4rem;
+  color: #333333;
+  line-height: 2.4rem;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.testimonial__author:before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin-right: 10px;
+  position: relative;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+}
+
+.testimonial__icon {
+  padding: 30px;
+  border: 3px solid #95e1d3;
+  margin-right: 60px;
+  box-sizing: initial;
+}
+
+.testimonial-left, .testimonial-right {
+  position: absolute;
+  top: 50%;
+}
+
+.testimonial-left {
+  left: 80px;
+}
+
+.testimonial-right {
+  right: 0px;
+}
+
 /* ========== FOOTER SECTION ========== */
 /* ========== MEDIA QUERIES ========== */
 

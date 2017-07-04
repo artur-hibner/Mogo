@@ -239,3 +239,48 @@
 		margin: 14px;
 	}
 }
+
+.testimonial{
+	background-color: #f8f8f8;
+	@include font-family($roboto, 1.5rem, #999999, 2.4rem, 300i);
+			font-style: italic;
+	& .wrapper{
+		overflow: hidden;
+		padding: 70px 110px;
+		position: relative;
+	}
+	&__quote{
+		display: flex;
+		text-align: left;
+	}
+	&__author{
+		@include font-family($kaushan, 2.4rem, #333333, 2.4rem, 400);
+		margin-top: 20px;
+		&:before{
+			content: "";
+    		display: inline-block;
+    		width: 60px;
+    		height: 3px;
+    		background-color: #f38181;
+    		margin-right: 10px;
+    		position: relative;
+    		transform: translateY(-200%);
+		}
+	}
+	&__icon{
+		padding: 30px;
+		border: 3px solid #95e1d3;
+		margin-right: 60px;
+		box-sizing: initial;
+	}
+	&-left, &-right{
+		position: absolute;
+		top: 50%;
+	}
+	&-left{
+		left: 80px;
+	}
+	&-right{
+		right: 0px;
+	}
+}
