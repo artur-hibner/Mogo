@@ -489,6 +489,103 @@ body {
   right: 0px;
 }
 
+.team {
+  padding-bottom: 90px;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team__person {
+  position: relative;
+  width: 380px;
+  background: linear-gradient(to bottom, #e88182 0%, #f0d98d 100%);
+  transition: all 0.2s linear;
+}
+
+.team__person:hover {
+  -webkit-transform: translateX(-10px) translateY(-10px);
+          transform: translateX(-10px) translateY(-10px);
+  box-shadow: 10px 10px 0px 0px #95e1d3;
+}
+
+.team__person:hover .person__photo {
+  opacity: 0.2;
+}
+
+.team__person:hover .person__social-link {
+  opacity: 1;
+}
+
+.person__photo {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.person__social-link {
+  display: -webkit-box;
+  display: flex;
+  text-transform: uppercase;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.person__social-link .fa {
+  width: 55px;
+  height: 55px;
+  font-size: 30px;
+  color: #f38181;
+  background-color: #fce38a;
+  padding: 15px;
+  border-left: 1px solid #f38181;
+  transition: all 0.2s linear;
+}
+
+.person__social-link .fa-facebook {
+  border-left: 0;
+}
+
+.person__social-link .fa:hover {
+  color: #ffffff;
+  background-color: #f38181;
+}
+
+.person__name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #333333;
+  line-height: 1.4rem;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.person__profession {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #999999;
+  line-height: 2.4rem;
+  font-weight: 300i;
+  margin-bottom: 20px;
+}
+
 /* ========== FOOTER SECTION ========== */
 /* ========== MEDIA QUERIES ========== */
 

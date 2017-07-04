@@ -284,3 +284,76 @@
 		right: 0px;
 	}
 }
+
+.team{
+	padding-bottom: 90px;
+	&__list{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	&__person{
+		position: relative;
+	    width: 380px;
+	    background: linear-gradient(to bottom, #e88182 0%,#f0d98d 100%);
+	    transition: all 0.2s linear;
+	    &:hover{
+	    	transform: translateX(-10px) translateY(-10px);
+    		box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+	    }
+	    &:hover .person__photo {
+	    	opacity: 0.2;
+	    }
+	    &:hover .person__social-link {
+	    	opacity: 1;
+	    }
+	}
+}
+
+.person{
+	&__photo{
+		opacity: 1;
+		display: block;
+		width: 100%;
+		height: auto;
+		transition: .5s ease;
+		backface-visibility: hidden;
+	}
+	&__social-link{
+		display: flex;
+		text-transform: uppercase;
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		& .fa{
+			width: 55px;
+			height: 55px;
+			font-size: 30px;
+			color: #f38181;
+			background-color: #fce38a;
+			padding: 15px;
+			border-left: 1px solid #f38181;
+	    	transition: all 0.2s linear;
+			&-facebook{
+				border-left: 0;
+			}
+			&:hover{
+				color: #ffffff;
+				background-color: #f38181;
+			}
+		}
+	}
+	&__name{
+		@include font-family($montserrat, 1.4rem, #333333, 1.4rem, 400);
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	&__profession{
+		@include font-family($roboto, 1.5rem, #999999, 2.4rem, 300i);
+		margin-bottom: 20px;
+	}
+}
