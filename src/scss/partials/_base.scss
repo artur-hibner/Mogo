@@ -1,5 +1,9 @@
 /* ========== MAIN SECTION ========== */
 
+%arrow{
+	@include arrow(20px, 20px, -135deg, 2px, solid, #CCCCCC, -10px, 0, 0, -50px)
+}
+
 .section{
 	text-align: center;
 	&__title{
@@ -29,6 +33,32 @@
 		@include font-family($roboto, 1.5rem, #999999, 2.4rem, 400);
 		margin-bottom: 80px;
 		padding: 0 10%; // 120px = 1200px (wrapper) * 10%
+	}
+	&__arrow{
+		&-up{
+			&:after{
+				@extend %arrow;
+				transform: rotate(45deg);
+			}
+		}
+		&-right{
+			&:after{
+				@extend %arrow;
+				transform: rotate(135deg);
+			}
+		}
+		&-down{
+			&:after{
+				@extend %arrow;
+				transform: rotate(-135deg);
+			}
+		}
+		&-left{
+			&:after{
+				@extend %arrow;
+				transform: rotate(-45deg);
+			}
+		}
 	}
 }
 
@@ -203,17 +233,6 @@
 		}
 		&-show{
 			margin-left: auto;
-			&:after{
-				content: "";
-  				width: 20px;
-  				height: 20px;
-				transform: rotate(-135deg);
-  				border-top: 2px solid #CCCCCC;
-  				border-left: 2px solid #CCCCCC;
-  				display: block;
-  				margin-top: -10px;
-  				margin-left: -50px;
-			}
 		}
 	}
 	&__icon{
