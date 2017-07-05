@@ -591,6 +591,87 @@ body {
   padding: 60px 0;
 }
 
+.wedo__list {
+  display: -webkit-box;
+  display: flex;
+}
+
+.wedo__tile {
+  position: relative;
+  background: linear-gradient(to bottom, #e88182 0%, #f0d98d 100%);
+  transition: all 0.2s linear;
+}
+
+.wedo__tile:hover .wedo__photo {
+  opacity: 0.2;
+}
+
+.wedo__tile:hover .wedo__photo-description {
+  opacity: 1;
+}
+
+.wedo__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  flex-basis: 25%;
+  position: relative;
+  background: linear-gradient(to bottom, #e88182 0%, #f0d98d 100%);
+  transition: all 0.2s linear;
+}
+
+.wedo__photo {
+  width: 100%;
+  height: auto;
+  -webkit-box-flex: 1;
+          flex: 1;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.wedo__photo-description {
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  text-transform: uppercase;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.wedo__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  line-height: 1.4rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.wedo__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  line-height: 2.4rem;
+  font-weight: 300i;
+  font-style: italic;
+}
+
 /* ========== FOOTER SECTION ========== */
 /* ========== MEDIA QUERIES ========== */
 
