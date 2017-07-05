@@ -436,14 +436,18 @@ body {
   font-style: italic;
 }
 
-.testimonial-person {
-  background-color: #FFFFFF;
-}
-
 .testimonial .wrapper {
   overflow: hidden;
   padding: 70px 110px;
   position: relative;
+}
+
+.testimonial-person {
+  background-color: #FFFFFF;
+}
+
+.testimonial-person .wrapper {
+  padding: 0 110px;
 }
 
 .testimonial__quote {

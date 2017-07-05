@@ -244,14 +244,17 @@
 	background-color: #f8f8f8;
 	@include font-family($roboto, 1.5rem, #999999, 2.4rem, 300i);
 			font-style: italic;
-			&-person{
-				background-color: #FFFFFF;
-			}
 	& .wrapper{
 		overflow: hidden;
 		padding: 70px 110px;
 		position: relative;
 	}
+			&-person{
+				background-color: #FFFFFF;
+				& .wrapper{
+					padding: 0 110px;
+				}
+			}
 	&__quote{
 		display: flex;
 		text-align: left;
