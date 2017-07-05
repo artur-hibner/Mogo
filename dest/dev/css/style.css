@@ -436,6 +436,10 @@ body {
   font-style: italic;
 }
 
+.testimonial-person {
+  background-color: #FFFFFF;
+}
+
 .testimonial .wrapper {
   overflow: hidden;
   padding: 70px 110px;
@@ -474,6 +478,10 @@ body {
   border: 3px solid #95e1d3;
   margin-right: 60px;
   box-sizing: initial;
+}
+
+.testimonial__photo {
+  margin-right: 30px;
 }
 
 .testimonial-left, .testimonial-right {
@@ -623,14 +631,12 @@ body {
 }
 
 .wedo__photo {
+  display: block;
   width: 100%;
   height: auto;
   -webkit-box-flex: 1;
           flex: 1;
   opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
   transition: .5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
