@@ -925,15 +925,63 @@ body {
 }
 
 .footer__about-min {
-  flex-basis: 40%;
+  flex-basis: 470px;
+}
+
+.footer__about-min .fa {
+  font-size: 1.5rem;
+  color: #95e1d3;
+  margin: 7px;
+}
+
+.footer__logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.6rem;
+  color: #cccccc;
+  line-height: 4.6rem;
+  font-weight: 700;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.footer__form {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: flex;
+}
+
+.footer__form-email {
+  width: 200px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #999999;
+  line-height: 2.4rem;
+  font-weight: 300i;
+  font-style: italic;
+  padding: 8px 14px;
+  border: 1px solid #e7e7e7;
+}
+
+.footer__form-submit {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  line-height: 1.4rem;
+  font-weight: 400;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #95e1d3;
+  border: 0;
+  padding: 15px 35px;
+  cursor: pointer;
 }
 
 .footer__column {
-  flex-basis: 25%;
+  flex-basis: 380px;
 }
 
 .footer__instagram {
-  flex-basis: 25%;
+  flex-basis: 270px;
 }
 
 .footer__page-info {
@@ -954,6 +1002,82 @@ body {
   text-align: center;
   margin-top: 70px;
   border-top: 2px solid #e5e5e5;
+}
+
+.about-min__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #999999;
+  line-height: 2.4rem;
+  font-weight: 300i;
+  margin-bottom: 50px;
+}
+
+.social-links__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  color: #333333;
+  line-height: 1.8rem;
+  font-weight: 700;
+  font-weight: normal;
+  padding-bottom: 17px;
+  border-bottom: 2px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+.social-links__subtitle {
+  font-weight: bold;
+}
+
+.social-links__follow {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #999999;
+  line-height: 2.4rem;
+  font-weight: 300i;
+  font-style: italic;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.blog-min-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #333333;
+  line-height: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.blog-min__post {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.blog-min__post-description {
+  padding: 20px;
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+
+.blog-min__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #333333;
+  line-height: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.blog-min__time {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  color: #999999;
+  line-height: 2.4rem;
+  font-weight: 300i;
+  font-style: italic;
 }
 
 .instagram__photos {
