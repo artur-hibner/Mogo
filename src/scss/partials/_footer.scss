@@ -1,1 +1,58 @@
 /* ========== FOOTER SECTION ========== */
+.footer{
+	padding-top: 75px;
+	background: #f8f8f8;
+	& .wrapper{
+		display: flex;
+		justify-content:space-between;
+		flex-wrap: wrap;
+	}
+	&__about-min{
+		flex-basis: 40%;
+	}
+	&__column{
+		flex-basis: 25%;
+	}
+	&__instagram{
+		flex-basis: 25%;
+	}
+	&__page-info{
+		flex-basis: 100%;
+	}
+
+	&__instagram-heading{
+		@include font-family($montserrat, 1.4rem, #333333, 1.4rem, 400);
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+
+	&__page-info{
+		text-align: center;
+		margin-top: 70px;
+		border-top: 2px solid #e5e5e5;
+		&__copy{
+
+		}
+	}
+}
+.instagram{
+	&__photos{
+		margin-bottom: 20px;
+	}
+	&__link{
+		@include font-family($roboto, 1.4rem, #333333, 1.4rem, 300i);
+		font-style: italic;
+		margin-top: 20px;
+		text-decoration: none;
+	}
+}
+
+.page-info{
+	&__copy{
+		@include font-family($montserrat, 1.4rem, #333333, 1.4rem, 400);
+		margin: 25px 0;
+		&-pink{
+			color: #f38181;
+		}
+	}
+}
