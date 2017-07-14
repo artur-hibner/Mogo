@@ -31,3 +31,112 @@ body{
     width: 1px;
     white-space: nowrap;
 }
+
+.header{
+    &__nav{
+        position: relative;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        @include font-family($montserrat, 3rem, #FFFFFF, 3rem, 700);
+        font-weight: bold;
+        text-decoration: none;
+        &:hover{
+            color: #fce38a;
+        }
+    }
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    &__link{
+        @include font-family($montserrat, 1.4rem, #FFFFFF, 1.4rem, 400);
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0;
+        transition: all 0.1s linear;
+        &:hover{
+            padding-bottom: 10px;
+            color: #fce38a;
+            border-bottom: 3px solid #fce38a;
+        }
+        &.fa{
+            border: 0;
+            padding: 10px;
+            margin-top: -10px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.page{
+    &__header, &__title, &__subtitle{
+        position: relative;
+    }
+    &__header{
+        background-image: url("../images/header.png");
+        background-size: cover;
+        text-align: center;
+        padding-bottom: 230px;
+        &:before{
+            content: ' ';
+            background: linear-gradient(to bottom, #e88182 0%,#f0d98d 100%);
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.9;
+        }
+    }
+    &__title{
+        @include font-family($kaushan, 7.2rem, #FFFFFF, 7.2rem, 400);
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 140px;
+    }
+    &__subtitle{
+        @include font-family($montserrat, 12rem, #FFFFFF, 12rem, 700);
+        text-transform: uppercase;
+        font-weight: bold;
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 60px;
+        &:after{
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #ffffff;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            position: relative;
+            transform: translateX(-50%);
+            left: 50%;
+        }
+    }
+    &__scroll-down{
+        @include font-family($montserrat, 1.4rem, #FFFFFF, 1.4rem, 700);
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 30px;
+        position: relative;
+        background: transparent;
+        outline: none;
+        border: 3px solid #FFFFFF;
+        transition: all 0.1s linear;
+        cursor: pointer;
+        &:hover{
+            color: #fce38a;
+            border-color: #fce38a;
+        }
+    }
+}
