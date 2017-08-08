@@ -136,7 +136,7 @@ body {
   transition: all 0.1s linear;
 }
 
-.menu__link:hover {
+.menu__link:hover, .menu__link:focus {
   padding-bottom: 10px;
   color: #fce38a;
   border-bottom: 3px solid #fce38a;
@@ -229,7 +229,7 @@ body {
   cursor: pointer;
 }
 
-.page__scroll-down:hover {
+.page__scroll-down:hover, .page__scroll-down:focus {
   color: #fce38a;
   border-color: #fce38a;
 }

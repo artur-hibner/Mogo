@@ -60,7 +60,7 @@ body{
         text-transform: uppercase;
         padding: 0;
         transition: all 0.1s linear;
-        &:hover{
+        &:hover, &:focus{
             padding-bottom: 10px;
             color: #fce38a;
             border-bottom: 3px solid #fce38a;
@@ -134,7 +134,7 @@ body{
         border: 3px solid #FFFFFF;
         transition: all 0.1s linear;
         cursor: pointer;
-        &:hover{
+        &:hover, &:focus{
             color: #fce38a;
             border-color: #fce38a;
         }
