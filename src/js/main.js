@@ -2,6 +2,20 @@ $(document).ready(function() {
 
     $(window).scroll(startCounter);
 
+    $('.menu__link').on('click', function(e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        var target = this.hash;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+            //future  'scrollTop': $target.offset().top - 100 (nav_height)
+        }, 1500, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+
     function startCounter() {
         var onTop = $('#counter').offset().top - window.innerHeight;
 
@@ -24,5 +38,5 @@ $(document).ready(function() {
             });
         }
     }
-
+    
 });

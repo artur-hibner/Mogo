@@ -136,7 +136,7 @@ body {
   transition: all 0.1s linear;
 }
 
-.menu__link:hover, .menu__link:focus {
+.menu__link-active, .menu__link:hover, .menu__link:focus {
   padding-bottom: 10px;
   color: #fce38a;
   border-bottom: 3px solid #fce38a;
