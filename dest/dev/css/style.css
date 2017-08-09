@@ -393,6 +393,17 @@ body {
   justify-content: space-around;
 }
 
+.counter__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  flex-basis: 20%;
+}
+
 .counter__number, .counter__caption {
   display: block;
 }
