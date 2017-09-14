@@ -1,16 +1,20 @@
 $(document).ready(function() {
 
+    $(window).scroll(fixedMenu);
     $(window).scroll(startCounter);
     $(window).scroll(onScroll);
+
 
     $('.menu__link').on('click', function(e) {
         e.preventDefault();
         $(document).off("scroll");
 
-        var target = this.hash;
+        var target = this.hash,
+        	nav = $('.header__nav'),
+            nav_height = nav.outerHeight();
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
+            'scrollTop': $target.offset().top - nav_height
             //future  'scrollTop': $target.offset().top - 100 (nav_height)
         }, 1500, 'swing', function() {
             window.location.hash = target;
@@ -48,11 +52,13 @@ $(document).ready(function() {
             var theID = $(this).attr('href'),
                 nav = $('.header__nav'),
                 nav_height = nav.outerHeight(),
-                divPos = $(theID).offset().top - 1,
+                divPos = $(theID).offset().top - nav_height,
                 //future  divPos = $(theID).offset().top - nav_height - 1,
                 divHeight = $(theID).height();
+                console.log("divPos nie zaokraglone----" + theID + " --- " + $(theID).offset().top);
 
-            if (windowPos >= divPos && windowPos <= (divPos + divHeight)) {
+                console.log("divPos zzaoraklone ----" + theID + " --- " + Math.ceil($(theID).offset().top));
+            if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
                 $("a[href='" + theID + "']").addClass("menu__link-active");
 
             } else {
@@ -60,4 +66,18 @@ $(document).ready(function() {
             }
         });
     }
+
+    function fixedMenu(){
+        var windowTop = $(document).scrollTop(),
+            nav = $('.header__nav'),
+            navTop = nav.offset().top;
+            // console.log("windowtop " + windowTop);
+			// console.log("navtop" + navTop);
+    	if (windowTop >= nav.height()) {
+    		nav.addClass('header__nav-scrolled');
+    	}else{
+    		nav.removeClass('header__nav-scrolled');
+    	}
+    }
+
 });

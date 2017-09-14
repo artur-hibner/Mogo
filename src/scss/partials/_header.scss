@@ -34,11 +34,22 @@ body{
 
 .header{
     &__nav{
-        position: relative;
+        position: fixed;
         height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        // top:0;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 9999;
+        &-scrolled{
+            // position: fixed;
+            background-color: #E78382;
+            transition: background-color 300ms linear;
+        }
     }
     &__logo{
         @include font-family($montserrat, 3rem, #FFFFFF, 3rem, 700);
@@ -100,7 +111,7 @@ body{
         display: block;
         margin: 0 auto;
         width: 50%;
-        margin-top: 140px;
+        padding-top: 240px;
     }
     &__subtitle{
         @include font-family($montserrat, 12rem, #FFFFFF, 12rem, 700);

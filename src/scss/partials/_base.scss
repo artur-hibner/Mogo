@@ -384,6 +384,7 @@
 	}
 	&__tile{
 		position: relative;
+		height: 100%;
 	    background: linear-gradient(to bottom, #e88182 0%,#f0d98d 100%);
 	    transition: all 0.2s linear;
 	    &:hover .wedo__photo {
@@ -398,6 +399,7 @@
   		flex-direction: column;
 		flex-basis: 25%;
 		position: relative;
+		max-height: 643px;
 	    background: linear-gradient(to bottom, #e88182 0%,#f0d98d 100%);
 	    transition: all 0.2s linear;
 	}

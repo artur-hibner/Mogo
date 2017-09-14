@@ -92,7 +92,7 @@ body {
 }
 
 .header__nav {
-  position: relative;
+  position: fixed;
   height: 100px;
   display: -webkit-box;
   display: flex;
@@ -100,6 +100,16 @@ body {
           justify-content: space-between;
   -webkit-box-align: center;
           align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.header__nav-scrolled {
+  background-color: #E78382;
+  transition: background-color 300ms linear;
 }
 
 .header__logo {
@@ -181,7 +191,7 @@ body {
   display: block;
   margin: 0 auto;
   width: 50%;
-  margin-top: 140px;
+  padding-top: 240px;
 }
 
 .page__subtitle {
@@ -764,6 +774,7 @@ body {
 
 .wedo__tile {
   position: relative;
+  height: 100%;
   background: linear-gradient(to bottom, #e88182 0%, #f0d98d 100%);
   transition: all 0.2s linear;
 }
@@ -784,6 +795,7 @@ body {
           flex-direction: column;
   flex-basis: 25%;
   position: relative;
+  max-height: 643px;
   background: linear-gradient(to bottom, #e88182 0%, #f0d98d 100%);
   transition: all 0.2s linear;
 }
