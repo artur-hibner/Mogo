@@ -80,5 +80,26 @@ $(document).ready(function() {
     	}
     }
 
+    $(".service__item-heading").on("click", function(){
+
+    	$(this).children('a')
+    			.toggleClass('section__arrow-down')
+    			.toggleClass('section__arrow-up');
+
+    	if($(this).hasClass('service__item-heading--active')){
+    		$(this).removeClass('service__item-heading--active');
+    		$(this).next().removeClass('service__item-description--open');
+    	}else{
+    		$(this).siblings().removeClass('service__item-heading--active');
+    		$(this).next().siblings().removeClass("service__item-description--open");
+      		$(this).toggleClass("service__item-heading--active");
+      		$(this).next().toggleClass("service__item-description--open");
+
+      		$(this).siblings().children('a')
+    			.addClass('section__arrow-down')
+    			.removeClass('section__arrow-up');
+    	}
+    });
+
 });
 //# sourceMappingURL=main.js.map

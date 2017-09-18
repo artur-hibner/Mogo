@@ -39,6 +39,7 @@
 			&:after{
 				@extend %arrow;
 				transform: rotate(45deg);
+				transition: all 0.2s linear;
 			}
 		}
 		&-right{
@@ -51,6 +52,7 @@
 			&:after{
 				@extend %arrow;
 				transform: rotate(-135deg);
+				transition: all 0.2s linear;
 			}
 		}
 		&-left{
@@ -207,8 +209,12 @@
 		flex-wrap: wrap;
 	}
 	&__photo{
-		flex-basis: 50%;
-		padding-right: 30px;
+		width: 100%;
+		height: auto;
+		&-container{
+			flex-basis: 50%;
+			padding-right: 30px;
+		}
 	}
 	&__list{
 		flex-basis: 50%;
@@ -224,6 +230,8 @@
 			cursor: pointer;
 			border: 2px solid #e5e5e5;
 			margin-top: 10px;
+			margin-bottom: 20px;
+			position: relative;
 			&:first-child{
 				margin-top: 0;
 			}
@@ -232,10 +240,18 @@
 			height: 130px;
 			@include font-family($roboto, 1.5rem, #999999, 2.4rem, 300i);
 			font-style: italic;
-			margin: 20px;
-			display: none;
+			margin: 0 20px;
 			text-align: left;
 			overflow: auto;
+			height: 0;
+			// opacity: 0;
+	    	transition: all 0.2s linear;
+			&--open{
+				height: 100px;
+				// opacity: 1;
+	    		transition: all 0.2s linear;
+				overflow: auto;
+			}
 		}
 		&-show{
 			margin-left: auto;

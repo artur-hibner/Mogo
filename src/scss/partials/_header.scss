@@ -32,6 +32,10 @@ body{
     white-space: nowrap;
 }
 
+.hide{
+    display: none;
+}
+
 .header{
     &__nav{
         position: fixed;
